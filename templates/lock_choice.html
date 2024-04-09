@@ -16,30 +16,23 @@
 {% endif %}
 <p class="t_title">
 
-Now Alex, you're standing before the safe box, poised to unlock its secrets. 
-Before you are three distinct slots, each leading to potential success or immediate failure. 
-The stakes are high: a single incorrect choice will trigger an alarm, 
-sealing the safe's contents away and marking the end of your quest. 
-With the key in hand and fate hanging in the balance, which slot do you commit to?
+    Now Alex, you're standing before the safe box, poised to unlock its secrets. 
+    Before you is the safe box, with the only slot on it. Putting the key in would 
+    lead to potential success or immediate failure. The stakes couldn't be higher: 
+    a one-in-three chance you will open the safe, against a two-thirds probability 
+    of setting off the alarm. What would you do?
 <br>
-</p>
+<br>
+<img src="{{ url_for('static', filename='img/box.jpg') }}" alt="Example Image"  style="width: 100%;" >
 
+</p>
+<div class="container">
 <form method="POST">
 <!-- <form id="slotChoiceForm"> -->
     <input type="radio" id="roundSlot" name="slotChoice" value="A">
-    <label for="roundSlot">A. the round one</label><br>
-    <img src="{{ url_for('static', filename='img/round.jpg') }}" alt="Example Image"  width="200" >
-    <br>
-    
-    <input type="radio" id="triangleSlot" name="slotChoice" value="B">
-    <label for="triangleSlot">B. the triangle one</label><br>
-    <img src="{{ url_for('static', filename='img/triangle.jpg') }}" alt="Example Image"  width="200" >
-    <br>
-    
-    <input type="radio" id="squareSlot" name="slotChoice" value="C">
-    <label for="squareSlot">C. the square one</label><br>
-    <img src="{{ url_for('static', filename='img/square.jpg') }}" alt="Example Image"  width="200" >
-    <br>
+    <label for="roundSlot">Try my luck anyway</label><br>
+        <br>
+    </div>    
     <input type="submit" value="Continue" class="continue-btn">
 </form>
 <br>
