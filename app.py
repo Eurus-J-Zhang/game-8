@@ -51,7 +51,7 @@ def handle_form():
         elif slot_choice in ('A', 'C'):
             return redirect(url_for('wrong')) # Redirect to the wrong page
         else:
-            return render_template('p4.html', error='Please select an option.') 
+            return render_template('lock_choice.html', error='Please select an option.') 
     return render_template('lock_choice.html')
 
 
