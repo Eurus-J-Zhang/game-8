@@ -10,12 +10,5 @@ class Data(db.Model):
 
     final_choice = db.Column(db.String(1))
 
-    emo1_happiness = db.Column(db.Integer)
-    emo1_joy = db.Column(db.Integer)
-    emo1_despair = db.Column(db.Integer)
-    emo1_sadness = db.Column(db.Integer)
-    emo1_irritation = db.Column(db.Integer)
-    emo1_rage = db.Column(db.Integer)
-    emo1_confusion = db.Column(db.Integer)
-
-    feedback = db.Column(db.String(1000))
+    emo_choice = db.Column(db.String(10))
+    feedback = db.Column(db.String(10000))

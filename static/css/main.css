@@ -121,3 +121,6 @@ form {
     cursor: pointer;
   }
   
+  .spaced-label {
+    margin-right: 60px; /* Adjust the value as needed */
+  }
